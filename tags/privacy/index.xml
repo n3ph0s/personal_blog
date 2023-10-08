@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>privacy on Learning is a lifelong journey, best traveled with an open mind and a curious heart.</title>
+    <link>https://www.nephos.guru/tags/privacy/</link>
+    <description>Recent content in privacy on Learning is a lifelong journey, best traveled with an open mind and a curious heart.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 07 Jul 2022 01:27:57 +0800</lastBuildDate><atom:link href="https://www.nephos.guru/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy</title>
+      <link>https://www.nephos.guru/posts/2022/privacy/</link>
+      <pubDate>Thu, 07 Jul 2022 01:27:57 +0800</pubDate>
+      
+      <guid>https://www.nephos.guru/posts/2022/privacy/</guid>
+      <description>I read this article today in which Google stated that it would &amp;ldquo;wipe user location history for visits to healthcare clinics, domestic violence shelters&amp;rdquo; with the following text as an example:
+Suppose the company&amp;rsquo;s systems detect a visit to places including medical facilities, counseling centers, domestic violence shelters, abortion and fertility clinics, or addiction treatment centers. In that case, Fitzpatrick says, &amp;ldquo;we will delete these entries from Location History soon after they visit.</description>
+    </item>
+    
+  </channel>
+</rss>

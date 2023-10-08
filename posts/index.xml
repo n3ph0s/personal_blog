@@ -1,0 +1,587 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Learning is a lifelong journey, best traveled with an open mind and a curious heart.</title>
+        <link>https://www.nephos.guru/posts/</link>
+        <description>Recent content in Posts on Learning is a lifelong journey, best traveled with an open mind and a curious heart.</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Fri, 06 Oct 2023 18:22:13 +0800</lastBuildDate>
+        <atom:link href="https://www.nephos.guru/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>My Linux Journey: From Desktop Environments to Minimalist Tiling Window Manager</title>
+            <link>https://www.nephos.guru/posts/2023/linux_journey_continued/</link>
+            <pubDate>Fri, 06 Oct 2023 18:22:13 +0800</pubDate>
+            
+            <guid>https://www.nephos.guru/posts/2023/linux_journey_continued/</guid>
+            <description>I can&amp;rsquo;t believe it&amp;rsquo;s been over two years since I made the switch from Apple to Linux. It was a great decision, and I haven&amp;rsquo;t looked back.
+At first, I used PopOS, a Linux distribution known for its tiling window manager. I liked PopOS, but I wanted a more customized and streamlined experience. So, I decided to move away from desktop environments altogether and switch to a tiling window manager on Debian 12.</description>
+            <content type="html"><![CDATA[<p>I can&rsquo;t believe it&rsquo;s been over two years since I made the switch from Apple to Linux. It was a great decision, and I haven&rsquo;t looked back.</p>
+<p>At first, I used PopOS, a Linux distribution known for its tiling window manager. I liked PopOS, but I wanted a more customized and streamlined experience. So, I decided to move away from desktop environments altogether and switch to a tiling window manager on Debian 12.</p>
+<h2 id="why-ditch-the-desktop-environment">Why ditch the desktop environment?</h2>
+<p>Desktop environments are collections of software applications that provide the graphical user interface (GUI) for Linux operating systems. They include the desktop, taskbar, menus, windows, and other visual elements.</p>
+<p>But desktop environments can also be bloated and resource-intensive. If you&rsquo;re looking for a more minimalist and lightweight computing experience, a tiling window manager may be a better option.</p>
+<p>Tiling window managers don&rsquo;t come with a pre-built GUI. Instead, they give you complete control over how your windows are arranged on the screen. This can be more efficient and productive than using a desktop environment, especially if you&rsquo;re working with multiple windows at the same time.</p>
+<h2 id="my-tiling-window-manager-journey">My tiling window manager journey</h2>
+<p>I tried a few different tiling window managers before settling on i3. i3 is well-documented, highly configurable, and meets my needs perfectly.</p>
+<p>But there are many other great tiling window managers available, such as Awesome Windows Manager, BSPWM, DWM, Qtile, and XMonad. If you&rsquo;re interested in trying a tiling window manager, I encourage you to experiment and find one that&rsquo;s right for you.</p>
+<h2 id="setting-up-a-tiling-window-manager">Setting up a tiling window manager</h2>
+<p>Setting up a tiling window manager can be a bit of a learning curve. But it&rsquo;s worth it for the benefits of a more minimalist and efficient computing experience.</p>
+<h2 id="here-are-a-few-tips">Here are a few tips:</h2>
+<ul>
+<li>Start by choosing a tiling window manager that&rsquo;s right for you. Consider your needs and workflow when choosing a window manager.</li>
+<li>Once you&rsquo;ve chosen a tiling window manager, read the documentation and tutorials. This will help you learn how to use the window manager and configure it to your liking.</li>
+<li>Don&rsquo;t be afraid to experiment. Tiling window managers are highly customizable, so there&rsquo;s no right or wrong way to use them. Try different configurations and find what works best for you.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>I&rsquo;ve been using a tiling window manager on Debian 12 for a few months now, and I&rsquo;m very happy with the switch. It&rsquo;s given me a more minimalist, efficient, and productive computing experience.</p>
+<p>If you&rsquo;re looking for a way to improve your Linux workflow, I encourage you to try a tiling window manager. It may take some time to get used to, but it&rsquo;s worth it in the end.  Feel free to check out my <a href="https://github.com/n3ph0s/debian-n3ph0s">configuration</a> which I will be updating periodically.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>My Journey to Linux</title>
+            <link>https://www.nephos.guru/posts/2022/linux_journey/</link>
+            <pubDate>Wed, 13 Jul 2022 01:32:51 +0800</pubDate>
+            
+            <guid>https://www.nephos.guru/posts/2022/linux_journey/</guid>
+            <description>This is the story of my journey from being a loyal Apple user for nearly 20 years when 1 year ago I decided to completely leave the Apple ecosystem and move to Linux full-time.
+The article will provide an overview of the many small decisions that I made from mid-2021 when I got a Lenovo laptop and installed PopOS 20.04 on it.
+Background To provide some context, it was around 2000 when I decided to move away from Windows (the last good Windows OS in my opinion was Windows XP) and my first foray into Apple was an iMac (The tangerine colour I believe) and over the years I have had several MacBook Pros including the 17inch model which was a beast and lasted for more years than I can recall.</description>
+            <content type="html"><![CDATA[<p>This is the story of my journey from being a loyal Apple user for nearly 20 years when 1 year ago I decided to completely leave the Apple ecosystem and move to Linux full-time.</p>
+<p>The article will provide an overview of the many small decisions that I made from mid-2021 when I got a Lenovo laptop and installed PopOS 20.04 on it.</p>
+<h2 id="background">Background</h2>
+<p>To provide some context, it was around 2000 when I decided to move away from Windows (the last good Windows OS in my opinion was Windows XP) and my first foray into Apple was an iMac (The tangerine colour I believe) and over the years I have had several MacBook Pros including the 17inch model which was a beast and lasted for more years than I can recall. It was, however, the last and probably the most expensive device over the time was the top of line, MBP Pro 13 inch Retina with Touch Bar and fully spec&rsquo;d out and it was a lemon. The battery swelled, I took it to Apple to get it repaired and then it just got worse and worse from there and it became very evident that the quality that made the original Apple so good, went away when Steve Jobs passed and under the reign of Tim Cook the innovation and quality went south.</p>
+<p>It was at that point that I decided to leave the Apple Galaxy and not just the computer, but the mobile and tablet landscape as well and switched to a custom ROM Android and Linux and when reflecting on it, I should have done this a lot sooner. Platform lockdown, software bloat and general lack of privacy are actual things and it is costly.</p>
+<p>I did briefly consider Windows 10 as well, very shortly (about 30 seconds) before dismissing that as a viable option.</p>
+<p>Normally when looking to make a change such as switching Operating Systems, there are at least 3 areas that need to be considered which are hardware, software and data, but this for me was a lot easier as the hardware was completely unstable at the point of time that I went out and bought the Lenovo laptop, as my current Apple machine was having several kernel panics a day. I started ensuring that all data was backed up and the key challenges were related to software and peripherals that I will cover later in the article.</p>
+<h3 id="ideology">Ideology</h3>
+<p>When you say to people that you are running Linux, they often believe that it is related to an ideology such as &ldquo;Free and Open Source Software&rdquo; or anti-large technology companies, but this isn&rsquo;t my case.</p>
+<p>I do have strong views related to Open Source Software, but I am not one of those zealots that refuses to use commercial software and will only use Free and Open Source, but what I do care about is the ability to access data that I created without being locked into a single platform/system as my needs change over the years.</p>
+<p>My choice of technology is related to my computing needs and knowledge at that particular time in my life. Windows was good in the 90s and Macs for the next 20 years, but now, Linux is my preferred choice and for the foreseeable future.</p>
+<h2 id="hardware">Hardware</h2>
+<p>Normally, this would have been the longest part of the overall experience as I looked for a machine that would meet all my requirements, but this was very quick as I had a malfunctioning machine and went to a Harvey Norman in Singapore and from the limited selection that they had, I chose a Lenovo ThinkPad which had reasonable specifications and I had a reasonably high level of confidence that it would support Linux.</p>
+<p>I was surprised how little support the big providers have for Linux Desktop, but thankfully the one that I got worked and I haven&rsquo;t had any issues with it to date.</p>
+<p>Once I had been using it for a few months, I then decided to upgrade the RAM and hard disk which I was able to do myself, which is something that I used to do a lot in my early days with computing, but when I started using a Mac, this became a non-starter as in the early days, it was possible, but difficult and Apple made it even more difficult to near on impossible in the recent years. Even trying to repurpose an old machine is now near impossible.</p>
+<p>One thing that I truly did come to appreciate is that I don&rsquo;t need a laptop anymore as I am more than capable of doing basic tasks on my smartphone or tablet. I am writing this on my phone with an external keyboard and for simple tasks, the need for a laptop becomes less important especially given that I predominately work remotely and travel has stopped. My next machine will be a desktop from System76 which is an independent computer maker that specializes in Linux-compatible hardware.</p>
+<h3 id="peripherals">Peripherals</h3>
+<p>The main peripherals that I had were a portable ScanSnap Scanner as well as a desktop version for larger jobs, which unfortunately the manufacturer doesn&rsquo;t provide Linux drivers, but I was able to find a way to port the drivers across and have both of them working, but not as seamless as they do on either a Mac or Windows as some of the advanced functionality isn&rsquo;t supported, but at the end of the day, the key task is scanning and this works.</p>
+<p>The other was a Kensington trackball which worked when plugged in but I wasn&rsquo;t able to use the software that comes with the product to program the usage of the buttons, but I did find how to program them at the lower level and have a script that autodetects when the trackball is connected which runs and configures it to exactly how I want it to function.</p>
+<p>Everything else such as my Logitech Webcam, Bluetooth headphones and remote wireless cards, all work natively without any issue at all.</p>
+<h2 id="software">Software</h2>
+<p>As I mentioned earlier, I chose PopOS as my operating system as it is based on Ubuntu which has a very large repository of software available and nearly every Open Source project provides a *.deb package that can be easily installed.</p>
+<p>The next challenge was to find suitable software to replace those that had become stables of what I used daily on my Mac.</p>
+<h3 id="note-taking-apps">Note-Taking Apps</h3>
+<p>A key staple of my computing needs is my note-taking software and for this, I use two main products which are Obsidian and Standard Notes.  Standard Notes is my key for daily notes as it syncs securely across all my devices and this would become my only note-taking application if they allowed embedded images and backlinks.</p>
+<p>On my Mac previously I had tried several variations of note-taking applications ranging from Evernote which I was a strong supporter of until they announced some changes to their policy that had security and privacy implications and then I moved off that platform and tried others such as Bear and Notion, but at the end of the day, what I need is the ability to take plain-text notes, back them up and make changes to them independent of the application that they were created in.</p>
+<h3 id="web-browser">Web Browser</h3>
+<p>I have been using Firefox for many years as I never really got into using Safari so migrating bookmarks was no drama at all.</p>
+<p>I run two browsers on Linux, which is Firefox for my everyday work and Chromium for specific tasks that require a Chrome-based browser.</p>
+<h3 id="music">Music</h3>
+<p>This was quite easy as despite having a decent collection of MP3s I predominately listen to music online and this is either via Spotify, but more recently I have been using Nuclear which is getting more stable by the day. I never really got into Apple Music so thankfully I avoided that challenge.</p>
+<h3 id="text-editors-and-ides">Text Editors and IDEs</h3>
+<p>This may seem tragic to some, but for the last couple of years, I have become a VIM advocate as this is a very powerful text editor and it just works. From an IDE perspective, I use Wing Pro for Python which is fully supported on Linux but there is a good selection of other IDEs that have native support for Linux.</p>
+<h3 id="video">Video</h3>
+<p>For as long as I can remember I have always used VLC as it works well for video consumption, can download video streams and works on every platform, I even have it installed on my mobile device.</p>
+<p>I have done some video editing in the past but there is no shortage of tools for this on Linux with the key one being OBS Studio which is predominately what I use now, but there is also KDEnlive which I have heard good things about but have not personally tried.</p>
+<p>I will admit that there is a lot of very good software for Mac users in the Video editing space and for those who are video professionals, I can see the appeal of staying on a Mac and not moving to Linux.</p>
+<h3 id="image-editors">Image Editors</h3>
+<p>I am by no means a graphic designer so my requirements for image editors are pretty basic and even though on the Mac I did use Pixelmator, this was nowhere near its full capacity for this today I use Gimp and Inkscape and this supports all the possible formats and image editing requirements that I have.</p>
+<h3 id="password-manager">Password Manager</h3>
+<p>This is a big one for me as I have a lot of passwords and initially, I was using 1Password7 but I made the switch to BitWarden a couple of years ago and this has both a native client and web plugins.</p>
+<h3 id="communications">Communications</h3>
+<p>Thankfully I stopped using iMessage a long time ago and moved to Signal and this was an easy switch as it has a native client.</p>
+<p>For work-related communications, these are predominately Google Meet, Zoom or Microsoft Teams and they all work, although, with Microsoft Teams, it is not possible to share just a Window (not sure if that is an issue on Mac) as I am just a guest at these meetings, with Microsoft becoming more friendly towards Linux in recent years, I am confident that this will improve over time.</p>
+<h2 id="data">Data</h2>
+<p>I was a hardcore user of iCloud but stopped using that heavily a few years ago as a paying customer for the service, it was just plain awful from a user experience perspective, especially when compared to other services such as Dropbox and OneDrive which were leaps and bounds ahead and were able to properly synchronize data across multiple devices.</p>
+<p>As I was a Google user, I moved all my working files to Google Drive, but have since started to move this to a self-hosted platform.</p>
+<h3 id="office-suite">Office Suite</h3>
+<p>For work, I use Google Docs which works everywhere and has no issues with that at all, and I have found that LibreOffice is more than capable of doing all the core functions that I need with regards to spreadsheets, word processing on the home front.</p>
+<h3 id="ebooks">eBooks</h3>
+<p>Thankfully I never really got into Apple iBooks, as I was heavy into the Kindle ecosystem, but the challenge with this is that they are digitally locked into Amazon and a few of the books in recent times have suddenly disappeared which I can only believe are related to changes with the distribution rights of the books so in recent times, I have decided to only purchase DRM Free content and thankfully most of the books I buy are technical so I can get this from publishers such as No Press Starch and have the freedom to read these on multiple platforms.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>My migration to Linux as a result of prolonged hardware issues and poor customer service from Apple, which in hindsight is a blessing.</p>
+<p>I have a productive setup, with a machine with decent battery life, that I was able to upgrade so it now has great specs, all at a fraction of the cost of my previous MBP. My files are saved in standard, open formats, and I will be able to open them in the future.</p>
+<p>During the last year, this setup has given me way fewer headaches and stress than what Apple was giving me and while it is not perfect, it is stable, efficient, very fast and so much cheaper.</p>
+<p>Every user will have different mileage and I am not advocating that everyone migrate to Linux, as being technical did help me find and solve a few quirks, but in general, I had way fewer challenges than I expected and have been very pleasantly surprised.</p>
+<p>For those who are sitting on the fence as to whether to try Linux, if you have an old machine lying around, breathe some new life into it and you may be pleasantly surprised, what have you got to lose?</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Privacy</title>
+            <link>https://www.nephos.guru/posts/2022/privacy/</link>
+            <pubDate>Thu, 07 Jul 2022 01:27:57 +0800</pubDate>
+            
+            <guid>https://www.nephos.guru/posts/2022/privacy/</guid>
+            <description>I read this article today in which Google stated that it would &amp;ldquo;wipe user location history for visits to healthcare clinics, domestic violence shelters&amp;rdquo; with the following text as an example:
+Suppose the company&amp;rsquo;s systems detect a visit to places including medical facilities, counseling centers, domestic violence shelters, abortion and fertility clinics, or addiction treatment centers. In that case, Fitzpatrick says, &amp;ldquo;we will delete these entries from Location History soon after they visit.</description>
+            <content type="html"><![CDATA[<p>I read this <a href="https://www.zdnet.com/article/google-to-wipe-user-location-history-for-visits-to-healthcare-clinics-domestic-violence-shelters/">article</a> today in which Google stated that it would &ldquo;wipe user location history for visits to healthcare clinics, domestic violence shelters&rdquo; with the following text as an example:</p>
+<blockquote>
+<p><em>Suppose the company&rsquo;s systems detect a visit to places including medical facilities, counseling centers, domestic violence shelters, abortion and fertility clinics, or addiction treatment centers. In that case, Fitzpatrick says, &ldquo;we will delete these entries from Location History soon after they visit.&rdquo;</em></p>
+</blockquote>
+<p>Well done Google for making this gesture, but it is nowhere near enough as at the heart of their business model, and that of many tech companies, is the data about each of the users that it uses in its advertising business for targeting etc.</p>
+<p>From an investigative perspective, the absence of data is just as telling, if not more so, and nowhere in the article does it state if this policy will cover everyone that uses Google or just a subsection of users?</p>
+<p>Privacy is a fundamental right, essential to autonomy and the protection of human dignity, serving as the foundation upon which many other human rights are built.</p>
+<p>Privacy enables us to create barriers and manage boundaries to protect ourselves from unwarranted interference in our lives, which allows us to negotiate who we are and how we want to interact with the world around us. Privacy helps us establish boundaries to limit who has access to our bodies, places and things, as well as our communications and our information.</p>
+<p>Privacy is essential to who we are as human beings, and we make decisions about it every single day. It gives us a space to be ourselves without judgement, allows us to think freely without discrimination, and is an important element of giving us control over who knows what about us.</p>
+<p>We have forgotten about privacy and the importance it plays in our lives and applaud companies who make gestures to giving back some of this fundamental right to us, but who will be ensuring that this happens?</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Failure is Learning</title>
+            <link>https://www.nephos.guru/posts/2022/failure_is_learning/</link>
+            <pubDate>Sat, 25 Jun 2022 01:23:44 +0800</pubDate>
+            
+            <guid>https://www.nephos.guru/posts/2022/failure_is_learning/</guid>
+            <description>I am sure that at some point in our lives we have all encountered failure and at this point, it may have felt that it was the worst thing that could happen. Now I don&amp;rsquo;t wish to get into the discussion about what type of failure is best, but from my perspective, I have been using this for the last few months to determine the best course of action for me to learn and how I can integrate failure to deepen learning.</description>
+            <content type="html"><![CDATA[<p>I am sure that at some point in our lives we have all encountered failure and at this point, it may have felt that it was the worst thing that could happen. Now I don&rsquo;t wish to get into the discussion about what type of failure is best, but from my perspective, I have been using this for the last few months to determine the best course of action for me to learn and how I can integrate failure to deepen learning.</p>
+<p>To provide some context, there are often two approaches to learning which are first we understand the theory of the subject and then do the practical exercises as we progress. The second is to jump in straight away and fumble our way around and then when we hit a roadblock go and look at the theory to understand it deeper.</p>
+<p>When I reflect on how I have learnt in the past I have used both of the aforementioned approaches and I find that the best approach for me is to quickly scan all the content (1 - 2 seconds per page) and tag any pages that catch my interest for review later and then at the end of that attempt to do the subject and go from there.</p>
+<blockquote>
+<p>NOTE: I am not suggesting that if you want to learn something like sky-diving that you watch a YouTube video and go and jump out of a plane, please exercise common sense and ensure that the safety of yourself and others is first and foremost.</p>
+</blockquote>
+<p><img src="/assets/skydive.jpeg" alt="Skydiving"></p>
+<p>In the last month, I have undertaken this on two very different subject areas with the first being to learn about Software Defined Radio (SDR) Hacking and the second is cooking poached eggs.</p>
+<p>Two very different fields, but I have found that the approach has worked well when starting with learning to cook the perfect poached egg, I watched a couple of videos and then jumped straight into it. For anyone that has tried this, professional chefs make it look super easy and I went through several variations from using white vinegar to different size pans, stirring speeds, temperature, types, freshness and temperatures of eggs, and the list goes on. My first attempt was edible and luckily so have all the subsequent ones (to varying degrees of course) but each of these small failures, generated a series of questions about what went wrong, why did that happen, and what could I do to correct that etc. Today I finally made restaurant quality look, texture and taste and I am over the moon.</p>
+<p>Now how does this work on a deeper subject that requires a high level of technical skills and subject knowledge? Very similar to be honest. I quickly looked through the content and understood the basic premise but as I started going through them I was coming up with a lot of questions and then I encountered a problem and had to start researching what happened, why did it happen and that made me persist even harder and want to understand the subject material even deeper that made the theory part of the subject much more interesting.</p>
+<p>Through experiencing failure which is integral to the learning process, it improves information recall, critical thinking and a deeper sense of determination and persistence that will build self-esteem. Failure is a fantastic opportunity for us to grow and instead of looking at it as a negative, we should appreciate the growth opportunities that it provides us and integrate it into our learning and appreciate the lessons that it is teaching us.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Have I been doing it wrong all these years?</title>
+            <link>https://www.nephos.guru/posts/2022/notetaking/</link>
+            <pubDate>Tue, 14 Jun 2022 00:27:44 +0800</pubDate>
+            
+            <guid>https://www.nephos.guru/posts/2022/notetaking/</guid>
+            <description>Have you ever had one of those moments when you start to think that the system you have been using for years just isn&amp;rsquo;t working for you anymore?
+I had that experience a few weeks ago when I was doing some personal studying on the weekend and while taking notes, I realised that there were several other projects that I was working on that could benefit from what I was learning and the application of it to these areas could be extremely beneficial.</description>
+            <content type="html"><![CDATA[<p>Have you ever had one of those moments when you start to think that the system you have been using for years just isn&rsquo;t working for you anymore?</p>
+<p>I had that experience a few weeks ago when I was doing some personal studying on the weekend and while taking notes, I realised that there were several other projects that I was working on that could benefit from what I was learning and the application of it to these areas could be extremely beneficial. I then asked myself the question, &ldquo;How can I ensure that this information isn&rsquo;t going to be forgotten and how can I apply it across those other areas?&rdquo;</p>
+<p>I didn&rsquo;t have a clear answer and for the next few hours I was mulling this over as I realised that my note-taking system was very much Top-Down, structured and organised into subjects/areas of interest and not that great at making links and relationships with disparate and in some cases, completely different fields of study or interest.</p>
+<p>That afternoon, I was sitting in a coffee shop waiting for my kids and had a couple of hours to spare and decided to do some research on how best I could ensure that the tomes of notes that I have aren&rsquo;t just an archival activity, but a true extension of my thought process, a personal knowledge management system that I could easily access when required.</p>
+<p>As I started researching, I came across several references to the Zettelkasten Method and the more that I looked into it, I could see that this method could address the questions of how I could tap into the information that I had collected, but this whole approached seemed overly complicated and the more I looked into the more confusing it became as there are so many variations of this and no real clarity on the system as a whole. I then saw the book &ldquo;How to Take Smart Notes&rdquo; by Sönke Ahrens and figured I would buy it and read it. I dedicated my Sunday to reading the book and honestly, whilst it was an interesting read, I was thinking that this approach wouldn&rsquo;t work, but I kept an open mind and read, and then it hit me. About two-thirds through the book it clicked.</p>
+<p>I decided that I would try the approach and so I set up a new notebook and implemented the system and started using it for the notes on my current study topic whilst it has been a challenge to stick with the new method and not fall back into old habits, the benefit I have gotten from just a few weeks has been worth it and the quality of the thinking around the subjects has increased significantly, find previously unknown relationships and the just the depth of understanding on the subject has made it clear that this approach will work and is here to stay.</p>
+<p>This brings up one more question which is &ldquo;What do I do with the 20,000+ personal notes that I have in my old system?&rdquo; The answer, Nothing! The reason being is that these are not wasted or need to be reworked into a new format, they need to be rediscovered. I have already gone back to a few of the notes and incorporated aspects of them into the new system and watched it organically grow as I start to find new connections and shall continue to do so.</p>
+<p>The purpose of this was to not promote some new product or tell you how you should be taking notes, but to share a challenge that I encountered and if you have experienced similar challenges then maybe this can help and you may find a way to re-energise your learning or study. I have always been a strong believer in self-reflection and challenging systems that you are using to ensure that they still meet your objectives rather than become complacent and do it the same way that you have always done.</p>
+<p>I have just started this journey, and can already see the benefits with my use cases if anyone is trying this as well and gets stuck, or has any questions, then please feel free to message me as happy to share my understanding and experiences of course learn from yours.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Hospitals should only have to focus on saving lives; not on security</title>
+            <link>https://www.nephos.guru/posts/2022/hospital_security/</link>
+            <pubDate>Fri, 22 Apr 2022 00:27:44 +0800</pubDate>
+            
+            <guid>https://www.nephos.guru/posts/2022/hospital_security/</guid>
+            <description>Hospitals should only have to focus on saving lives; not on security
+I know that the above statement will offend a lot of people, but before you all start flaming me, let me elaborate on this more and provide you with context as to why I would make such a statement. This past Sunday, I had to take my wife to the ER which resulted in her having to have emergency surgery, and for anyone who has ever been in a hospital with a loved one, knows that it is a very stressful time and our focus and that of the hospital staff is on doing what they can for the patient.</description>
+            <content type="html"><![CDATA[<blockquote>
+<p><strong>Hospitals should only have to focus on saving lives; not on security</strong></p>
+</blockquote>
+<p>I know that the above statement will offend a lot of people, but before you all start flaming me, let me elaborate on this more and provide you with context as to why I would make such a statement. This past Sunday, I had to take my wife to the ER which resulted in her having to have emergency surgery, and for anyone who has ever been in a hospital with a loved one, knows that it is a very stressful time and our focus and that of the hospital staff is on doing what they can for the patient.</p>
+<p>Whilst all of this was happening, there is a lot of &ldquo;hurry up and wait&rdquo; type situations and being curious of nature and as a former CTO/CISO, I looked around at all the technology in the hospital from the perspective of an adversary / cyber-criminal and there is a lot. I saw exposed network ports, unlocked and unmanned computers, many running outdated Operating Systems with just as outdated antivirus, shared credentials and numerous other things that would make any security person cringe. This is not a criticism of the hospitals IT or Security Staff, it is just an unfortunate reality of modern times with the rate of change in technology, interoperability of medical equipment and given the last couple of years with COVID, observations such as exposed network ports are due to makeshift solutions of having cameras in rooms to observe patients and minimize exposure.</p>
+<p>When you consider this technology and the fact that the people using these systems are health care professionals whose first priority should be that of looking after the patient, it is obvious why in recent times we have seen an increase in cyber attacks on hospitals and other medical providers. A quick Google search will show you a list of attacks against hospitals such as &ldquo;<a href="https://www.campussafetymagazine.com/hospital/healthcare-systems-iot-cyberattack/">82% of Hospitals Experienced IoT Cyberattack in Past 18 Months</a>&rdquo; by Campus Safety and of those hospitals 34% were Ransomware and 33% paid it.</p>
+<p>I am by no means saying that hospitals shouldn&rsquo;t focus on security as they have access to Patient Health Information (PHI), but their primary focus should be on saving lives. I am very much a privacy and security advocate, but when you are being asked questions by the medical staff, you are an open book and whilst there was a split second thought that this is all going to be leaked, you tell them everything as in that situation your focus is on your loved one and you want to make sure that they have all the information that they need.</p>
+<p>I grew up in the old school and I am by no means a Saint, but I have strong morals and principles. Criminals used to have their own moral code, hence the term &ldquo;Honor among Thieves&rdquo; and other variations of this such as &ldquo;Prison Justice&rdquo; which is directed at those who hurt children and woman. For those criminals who target hospitals and medical facilities you are affecting patients health and lives. For one second, think about this being someone you love in a hospital that you have taken offline and how you would feel if your family members suffered as a result?</p>
+<p>I am sure that there is someone reading this who is saying that &ldquo;they should spend more on security&rdquo; or &ldquo;they should hire better security people&rdquo; or a multitude of other reasons, but hospitals are the same as schools, I would prefer that they put more money towards helping our society and the people in it than having to protect it from those with no morals or principles who would target those institutions. When we look at the skills and resources that are needed in the security space, there is already a shortage across the board and core services such as health care and schools are not able to compete with the likes of big tech companies in attracting top talent and the staff that I have met in these organizations are doing the best they can with the resources that they have. The simple fact of the matter is that it is easier to justify and get support for the latest medical technology that can detect cancer earlier or increase survival rates for treatment than a security product that can reduce the amount of phishing emails that get through. Even if we put this into monetary value, if a hospital puts a higher priority on security than saving lives it would be a front page scandal, it is a &ldquo;Damned if you do, Damned if you don&rsquo;t&rdquo; scenario.</p>
+<p>For the medical and support staff at St Luke&rsquo;s Hospital Quezon City, that took such great care of my wife you are all hero&rsquo;s in my book and even after a tough couple of years with COVID on top of your normal workload, you still had a smile and friendly disposition that makes you feel that everything is going to be okay.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>The Real Cost of a Data Breach</title>
+            <link>https://www.nephos.guru/posts/2021/real_cost_data_breach/</link>
+            <pubDate>Sun, 25 Jul 2021 20:02:27 +0800</pubDate>
+            
+            <guid>https://www.nephos.guru/posts/2021/real_cost_data_breach/</guid>
+            <description>Today we are in a situation that many have never faced before, and organisations of all sizes are looking at ways to cut costs. One area that I have seen is with regards to cybersecurity due to the previous unprecedented spending with boards and executives now asking what they have achieved?
+I had an interesting conversation recently about security and the costs involved to provide adequate protection, and a statement was made that shocked me.</description>
+            <content type="html"><![CDATA[<p>Today we are in a situation that many have never faced before, and organisations of all sizes are looking at ways to cut costs. One area that I have seen is with regards to cybersecurity due to the previous unprecedented spending with boards and executives now asking what they have achieved?</p>
+<p>I had an interesting conversation recently about security and the costs involved to provide adequate protection, and a statement was made that shocked me. It was &ldquo;Given that there seems to be a breach every other day in the news; we just need to be seen to take reasonable measures to demonstrate we did our best.&rdquo;</p>
+<p>The underlying sentiment of the previous statement is desensitisation and apathy in &ldquo;it is happening to everyone, so there is nothing I can do.&rdquo; It got me thinking as to what is the real cost to a data breach?</p>
+<p>The most recent IBM/Ponemon Institute study calculated the cost of a data breach at $242 per stolen record, and more than $8 million for an average breach in the US. The same study estimated that a typical company has a 29.6% chance of experiencing a data breach in the next 24 months, a dramatic increase in the odds from just a few years ago.</p>
+<p>These are some disturbing statistics, but just looking at the above financials means that we will take a purely accounting approach to determine an amount that we spend to avoid a breach. However, this should not be the case as there are other factors to be considered, which are:</p>
+<ul>
+<li><strong>Legal Costs</strong> - One of the most visible costs to a company that encounters a data breach is from legal fees. These costs range from class action suits, settlements and potentially thousands of hours of attorney time are costs not often factored into the total loss reported.</li>
+<li><strong>Regulatory Fines</strong> - In the last few years, there has been a massive uptake in government oversight and in particular GDPR as well as local governments Data Protection Acts. The governing bodies have the ability to penalise companies as much as 4% of their top-line revenue for failure to protect personally identifiable information.</li>
+<li><strong>Brand Reputation / Lost Business</strong> - The publicity that you get from a data breach can have far-reaching implications on customer loyalty. The reputational damage can, in turn, slow a businesses sales potential for many years which some businesses will never be able to recover. Would you trust a bank with your life savings if they had a massive data breach?</li>
+<li><strong>Company Value</strong>  - A significant leak will result in the company bleeding from both the top and bottom line. A typical company could lose up to 2% of its value resulting in millions lost for shareholders.</li>
+</ul>
+<h2 id="does-remote-working-make-incidents-more-expensive">Does Remote Working make incidents more expensive?</h2>
+<p>Does remote working make incidents more expensive, Yes and No. If your organisation before COVID19 had a significant percentage of the organisation working remotely and had factored this into their incident response plan, then I would like to say No.</p>
+<p>If your organisation, like many, had to make haste moves to continue operations by moving the majority of the workforce to remote work, then the answer is Yes. The potential increase in the cost of exposure in my estimates by 15-20% higher. Security has now moved from a predominately centralised to a decentralised model, changing your trust boundary. The impact on network security, as well as endpoint protection, complicates incident response and how internal teams respond to security incidents.</p>
+<h2 id="what-does-the-data-say">What does the Data Say?</h2>
+<p>Whilst a lot of the information about the real costs of a data breach may never be publicly revealed, I was curious to take a couple of examples and see what I could find that could provide an indication as to the real cost of a data breach.</p>
+<h3 id="marriott-hotels">Marriott Hotels</h3>
+<p>The first that we will look at is the data breach in 2018 in which up to 500 million guests data was exposed.</p>
+<p><img src="/assets/marriott.png" alt="Marriott Data Breach"></p>
+<p>As you can see from the chart, there was a steep decline post the announcement, but it did start to make an upward movement a few weeks later.</p>
+<p>In addition to this, the company received a GDPR fine of 110.3m Euros.</p>
+<p>On March 31st, 2020, the hotel chain again disclosed a security breach that impacted the data of more than 5.2 million hotel guests who used their company&rsquo;s loyalty application.</p>
+<p><img src="/assets/marriott1.png" alt="Marriott Data Breach 2"></p>
+<p>There was still a drop in the share price, although this time around it did recover within a few days. The interesting question will be what is GDPR fine this time around as one of the considerations in determining the penalty is the track record which unfortunately is not ideal for Marriott.</p>
+<h3 id="mgm-resorts">MGM Resorts</h3>
+<p>Last year in 2019, MGM Resorts suffered a massive data breach. The news of the breach incident started to circulate in February 2020 when hackers leaked the personal details of 10.6 million hotel guests for free download. But in the later findings, the number increased by 14 times (nearly 142 million) than the number recorded in February 2020.</p>
+<p><img src="/assets/mgm.png" alt="MGM Data Breach"></p>
+<p>Whilst there is clear evidence that there is a massive drop in the share price, this may not all be contributed to the data breach as it was around the same time as COVID-19. Still, it was a contributing factor when you look at the price leading up to the initial data breach.</p>
+<p>At present, there have been no fines issued. Still, they are subject to both GDPR and CCPA with the California Attorney General being able to impose penalties up to $2500 per violation. I will let you do the math, but even if the fines are similar to what Marriott incurred, this becomes a costly security mishap.</p>
+<h2 id="closing-remarks">Closing Remarks</h2>
+<p>When looking at the costs and how do you prevent these, you need to change your outlook. Stop thinking about how do I prevent this as it is evident that a determined adversary given enough time and resources will be successful.</p>
+<p>It would be best if you started thinking that your network has already been breached and focus on how you can detect it in the fastest amount of time. This mindset will allow you to minimise the impact on the business and help ensure that weaknesses are identified and mitigated. A key component in this is Cyber Threat Intelligence in which you can detect this promptly and then address the vulnerability.</p>
+<p>These insights that you get from a good OSINT (Open Source Intelligence) platform allow you to assess the risk at the business level.</p>
+<p>Security is not just a technical problem it is a business problem and needs to speak the same language as the business and identify risks and mitigating strategies without FUD (Fear, Uncertainty and Doubt)</p>
+<h2 id="references">References:</h2>
+<ul>
+<li><a href="https://www.ibm.com/security/data-breach">https://www.ibm.com/security/data-breach</a></li>
+<li><a href="https://securityboulevard.com/2020/08/5-biggest-data-breaches-of-2020-so-far/">https://securityboulevard.com/2020/08/5-biggest-data-breaches-of-2020-so-far/</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Compliance Does NOT Equal Security!</title>
+            <link>https://www.nephos.guru/posts/2021/compliance_not_equal_security/</link>
+            <pubDate>Sun, 25 Jul 2021 17:28:34 +0800</pubDate>
+            
+            <guid>https://www.nephos.guru/posts/2021/compliance_not_equal_security/</guid>
+            <description>When you think about Security for your bank or health care provider, what comes to mind? Is it, my bank is PCI-DSS (Payment Card Industry Data Security Standard) compliant, or my Health Care provider is HIPPA (Health Insurance Portability and Account Act)compliant?
+If it is you are not alone, but you are fooling yourself if you believe that these certifications alone are sufficient to provide adequate protection.
+Compliance is often a requirement by a governing body based on the industry that you are in, and whilst they provide a solid framework, this should not be the end goal of any security program and here is why:</description>
+            <content type="html"><![CDATA[<p>When you think about Security for your bank or health care provider, what comes to mind? Is it, my bank is PCI-DSS (Payment Card Industry Data Security Standard) compliant, or my Health Care provider is HIPPA (Health Insurance Portability and Account Act)compliant?</p>
+<p>If it is you are not alone, but you are fooling yourself if you believe that these certifications alone are sufficient to provide adequate protection.</p>
+<p>Compliance is often a requirement by a governing body based on the industry that you are in, and whilst they provide a solid framework, this should not be the end goal of any security program and here is why:</p>
+<p><strong>Compliance does not guarantee Security</strong> - You only have to look into any newspaper these days, and there is a security breach which appears to be bigger than the last. If we look at the top few for this year alone, what is familiar with all of them is they all had industry certifications and are compliant businesses.</p>
+<p><strong>Compliance standards are not comprehensive</strong> - This is a catch 22 in that if the standards are too prescriptive, then they become a &ldquo;hackers playbook&rdquo; on how to circumvent. If they are not too loose, then any value that they provide can be often overlooked, ignored or just given lip-service. Many compliance standards offer valuable guidance in areas such as data handling, user privacy and breach disclosure; however, they often miss other critical areas such as security awareness, business continuity and penetration testing.</p>
+<p><strong>Threats evolve faster than compliance standards</strong> - Today, threat actors are seeking new ways to identify zero-day vulnerabilities, bypass the multitude of security controls. They are continually evolving the Tactics, Techniques and Procedures (TTP&rsquo;s) they are using and the resulting threats. Now contrast this with the relatively static nature of compliance standards and even more so the compliance-centric security standards.</p>
+<h1 id="compliance-and-security---a-symbiotic-relationship">Compliance and Security - A Symbiotic Relationship</h1>
+<p><img src="/assets/compliance_loading.png" alt="Compliance Loading"></p>
+<p>I don&rsquo;t want those who have read the above to think that I don&rsquo;t believe in industry certifications, I do. What I have a concern with is when organizations believe that compliance alone is sufficient or that it should take a higher priority as this opens up a multitude of avenues for compromise.</p>
+<p>I believe that the best course of action is in turning the security tools and processes into a compliant system. Now, this does require more effort as you need to prove the compliance of these with the regulatory standard. Taking a security approach first is something that I have personally used several times and most recently in obtaining MTCS Tier 3 Certification for a company in less than six months. The challenge is that you need to articulate the intent of the standard and how you comply with that. The following is a high-level roadmap of how to start with a security-first approach to compliance:</p>
+<ul>
+<li>Identify all the current security tools used and what function they perform</li>
+<li>Conduct a comprehensive risk assessment of the types of information processed</li>
+<li>Understand the requirements related to the framework</li>
+<li>Conduct a comprehensive Gap Analysis</li>
+<li>Plan how to address and solve each of the gaps identified</li>
+<li>Test the efficiency of the entire security solution</li>
+<li>Conduct regular assessments</li>
+</ul>
+<p>Compliance and Security need to work hand in hand, not Security versus Compliance.</p>
+<h1 id="final-thoughts">Final Thoughts</h1>
+<p>When you consider the implications for non-compliance, many organizations believe that adopting a compliance-centric approach is a reasonable and judicious decision.  It is critical to remember that whilst many provide clear and substantial security benefits, they are neither comprehensive nor flexible enough. For a business to address the threat landscape today, compliance can&rsquo;t be the only focal point if you are to have an effective security program.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Security in the &#34;New Normal&#34;</title>
+            <link>https://www.nephos.guru/posts/2021/security_new_normal/</link>
+            <pubDate>Wed, 21 Jul 2021 09:43:56 +0800</pubDate>
+            
+            <guid>https://www.nephos.guru/posts/2021/security_new_normal/</guid>
+            <description>At the beginning of the COVID-19 crisis, many organizations suddenly transitioned to a remote workforce with an increased focus on servicing customers via digital channels. While this rapid transition occurred, telecommuting&amp;rsquo;s sudden move created some security gaps with employees using insecure devices and networks. Cybercriminals, never wanting to let a crisis go to waste, used well-known attack techniques to capitalize on people&amp;rsquo;s COVID-19 fears. The following are some statistics with regards to COVID-19 cybercrime:</description>
+            <content type="html"><![CDATA[<p>At the beginning of the COVID-19 crisis, many organizations suddenly transitioned to a remote workforce with an increased focus on servicing customers via digital channels. While this rapid transition occurred, telecommuting&rsquo;s sudden move created some security gaps with employees using insecure devices and networks. Cybercriminals, never wanting to let a crisis go to waste, used well-known attack techniques to capitalize on people&rsquo;s COVID-19 fears. The following are some statistics with regards to COVID-19 cybercrime:</p>
+<ul>
+<li>The number of unsecured remote desktop machines rose by more than 40%.</li>
+<li>RDP brute-force attacks grew 400% in March and April alone.</li>
+<li>Email scams related to COVID-19 surged 667% in March alone</li>
+<li>Users are now three times more likely to click on pandemic-related phishing scams.</li>
+<li>COVID-19 drives 72% to 105% ransomware spike.</li>
+</ul>
+<p>When you look at some of the above statistics, it underscores the vital role that security plays in not only enabling remote operations but in the future as companies transform how their workforce, customers, supply chain, and partners will work together.</p>
+<p>As I reflect on the past eighteen months from a security perspective, there are three main areas that all cybersecurity leaders needed to focus on as the business transformed and embraced new processes and technologies: firefighting hot spots, cleaning up operations, and policy and process evolution.</p>
+<h2 id="firefighting-hot-spots">Firefighting hot spots</h2>
+<p>With the rapid transition to remote work, often in a less secure environment and in some cases having to use personal computers, this created several immediate security challenges that needed to be remediated and mitigated as a priority. Awareness campaigns had to be done by many companies focusing on digital hygiene, such as regular patching, pandemic-themed phishing campaign training, restriction on the use of personal printers, and prohibiting USB devices.  ## Cleaning up operations As part of the pandemic response, many companies had no choice but to accept new risks to keep operations going before they could reevaluate these risks and then tighten controls at a later stage.</p>
+<p>Many cybercriminals took advantage of the chaos that ensued during this disruption period as trust boundaries and responsibilities became blurred.</p>
+<h2 id="policy-and-process-evolution">Policy and process evolution</h2>
+<p>As we all settled into the new way of working for the foreseeable future, organizations started to review existing policies regarding remote working. They began to look at longer-term solutions to mitigate the associated risks and evolving existing processes with a closer focus on securing the value chain.</p>
+<h1 id="whats-next">What&rsquo;s next?</h1>
+<p>Despite some countries opening up and allowing people to go back to the office, there are still places that this is not an option.  This is a heated topic with many businesses wanting staff to return the office, but there is also a large movement of people that are resisting this request.  This is a long and heated topic with arguments on both sides that are valid, but I believe that remote working is here to stay.</p>
+<p><img src="/assets/wfh.png" alt="Work from Home Image"></p>
+<p>As such,business leaders need to handle the new business environment. Security Leaders need to think about current cybersecurity activities and long-term cyber risk strategies.</p>
+<p>To be able to secure the new business environment, security leaders will need to address three priority areas:</p>
+<ul>
+<li>Secure Workforce.</li>
+<li>Secure Customer Journey through digital transformation.</li>
+<li>Evaluate the supply chain and third-party risk.</li>
+</ul>
+<h2 id="secure-workforce">Secure Workforce</h2>
+<p>As we move to a remote workforce, the attack surface increases, and as such, static network-based security perimeters are no longer sufficient. The security needs to be dynamic and focus on users, assets, and resources as the new boundaries. The protection of these devices will need to utilize real-time anomaly detection with endpoint detection and response systems.</p>
+<p>In light of the distributed workforce, cyber-threat intelligence becomes crucial in conjunction with inside-threat detection to provide early warnings of attacks and or compromises.</p>
+<p>Moving to a remote workforce this also provides an excellent opportunity for those struggling to find cybersecurity resources due to existing gaps in the local talent pools to extend beyond the geographical boundaries to tap into the broader pool of talent.</p>
+<h2 id="secure-customer-journey-through-digital-transformation">Secure Customer Journey through digital transformation</h2>
+<p>For industries that have had to transition from traditional bricks and mortar to embrace digital or seen a massive increase in demand needs to focus on providing a frictionless customer-security journey. A key area for this is customer identity and access management to have a single customer identity across all digital channels.</p>
+<p>As you are looking at the customer journey, it is time to embrace a DevSecOps approach with security and privacy by design built into it and testing it at scale to ensure that they can continue to function when under load without impacting the customer&rsquo;s experience.</p>
+<h2 id="evaluate-the-supply-chain-and-third-party-risk">Evaluate the supply chain and third-party risk</h2>
+<p>Companies must consider third party cybersecurity levels as carefully as they do the security policies for employees and customers. It is critical to assess supply chain continuity and resilience controls to the new way of working.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In this continually changing landscape, cybersecurity teams have generally performed far above expectations to address new risks.</p>
+<p>In the new normal, cybersecurity leaders will protect their organizations at scale, making security an integral part of delivering business value.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Visual Thinking for Cybersecurity</title>
+            <link>https://www.nephos.guru/posts/2020/visual_thinking/</link>
+            <pubDate>Fri, 16 Oct 2020 12:00:41 +0800</pubDate>
+            
+            <guid>https://www.nephos.guru/posts/2020/visual_thinking/</guid>
+            <description>You may be thinking from the title of this article, why do I need to think visually? Well, last week, I had an interesting conversation with a Senior Executive about security and that even something as simple as his website could allow for a more extensive compromise and a threat to his business.
+I am sure you can imagine how the conversation went as his first response was, “this is not part of the production network,” and in this case, he was right.</description>
+            <content type="html"><![CDATA[<p>You may be thinking from the title of this article, why do I need to think visually? Well, last week, I had an interesting conversation with a Senior Executive about security and that even something as simple as his website could allow for a more extensive compromise and a threat to his business.</p>
+<p>I am sure you can imagine how the conversation went as his first response was, “this is not part of the production network,” and in this case, he was right. This statement was the beginning of a discussion about lateral movement from a threat actors perspective and how access can lead to the exploitation of high-value targets. There are so many ways that an attacker can get into a network from simple misconfigurations on a web-facing service to phishing emails.</p>
+<p>To demonstrate and make a point, I showed him a copy of BloodHound; it was stored on my machine and loaded with sample data about how the network looked (collected from a low-level authenticated user). Bloodhound provides not only a visual representation of the environment but also paths of attack to a target with the only requirement being you have an AD Authenticated User.</p>
+<p><img src="/assets/bloodhound.png" alt="Bloodhound Visualisation"></p>
+<p>Information is in multiple spreadsheets, systems, and the completeness is usually “point in time.” Not having up to date information stored in lists without seeing all the relationships makes it very challenging, if not nearly impossible, to defend a network from an attack. The situation only gets worse the larger the organisation. You then have dedicated teams looking after functions such as Server Team, Network Team, End Users, Backups, AV, etc.</p>
+<p>If we look at a Windows Network, users can perform various types of logons (Interactive, Terminal Server, and others). In each of these, the users’ credentials (including SSO equivalents, Kerberos TGT, or NTLM hash) are all exposed to theft if the underlying host is compromised.</p>
+<p>There are, of course, other relationships that create security dependencies such as:</p>
+<ul>
+<li>Local admin accounts with a standard password</li>
+<li>File Servers with Logon Scripts or Software Update Servers</li>
+<li>Print Servers</li>
+<li>Certificate Authorities for Smart Cards</li>
+<li>and many others,</li>
+</ul>
+<p>The underlying message is that once an attacker gets inside your network, it is just a waiting game for a high-value target to log on to the compromised machine. If you have a Terminal Server in your environment, how many users log in, and are any of those using an administrative account? If so, a password dumper tool such as Mimikatz can give you those credentials that can compromise more machines.</p>
+<p>So how do we move to visual thinking as a defender? Visualise your network and implement controls to minimise lateral movement:</p>
+<ul>
+<li>Implement infrastructure partitioning and credential silos to reduce unwanted edges</li>
+<li>Reduce the number of Admins. Implement Just-In-Time/Least Privilege techniques</li>
+<li>Use Two Factor Authentication to mitigate specific edge traversals.</li>
+<li>Ues a robust credential rotation approach in the event a user account is compromised.</li>
+<li>Rethink Forest Trust Relationships</li>
+</ul>
+<p><strong>Key Takeaway</strong></p>
+<p>You have the upper hand when it comes to defending your network as you have the full information about it, whereas an attacker has to build it up piece by piece.</p>
+<p>Take a lesson from attackers about how they understand your network and then apply the same principles to identify weaknesses and secure them.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>How to Think Like a Hacker!</title>
+            <link>https://www.nephos.guru/posts/2020/think_like_a_hacker/</link>
+            <pubDate>Wed, 07 Oct 2020 18:53:34 +0800</pubDate>
+            
+            <guid>https://www.nephos.guru/posts/2020/think_like_a_hacker/</guid>
+            <description>What do you picture when you think of a hacker? Are they sitting in a dark room with a glow of computer monitors wearing a dark hoodie, listening to fast-paced music and frantically trying to perform multiple tasks? If this is the image you envision, then you aren’t alone as this image has been portrayed so well by Hollywood.
+Hackers, as we know it today, e.g. black hat, white hat, have been around since at least November 1963 when the term first appeared in the MIT newspaper, The Tech.</description>
+            <content type="html"><![CDATA[<p>What do you picture when you think of a hacker? Are they sitting in a dark room with a glow of computer monitors wearing a dark hoodie, listening to fast-paced music and frantically trying to perform multiple tasks? If this is the image you envision, then you aren’t alone as this image has been portrayed so well by Hollywood.</p>
+<p>Hackers, as we know it today, e.g. black hat, white hat, have been around since at least November 1963 when the term first appeared in the MIT newspaper, The Tech.</p>
+<p>The term hacking is everywhere today and used to describe ways to change what is perceived to be normal behaviour. Terms such as bio-hacking (do it yourself biology experiments), growth hacking (use of creative, low-cost strategies to acquire and retain customers) and even “hacking the happiness molecule.”</p>
+<p>So what does this have to do with thinking like a hacker? Before I go into that, we are all creatures of habit, and from the moment we are born, we have behaviours that we develop over time. As we age, these become more complex and nuanced to the point that we operate on autopilot for many tasks, and our life becomes predictable. Our days are well structured as to what time we get up, coffee breaks, lunch and time we stop working and go home. Add into this social media and the “always-connected” lifestyle that we live and it is easy to see how one day starts to look like the next.</p>
+<p>So when we look at hackers (computer, bio, growth hackers et al.) the one common trait that I see is they all have an innate curiosity about how things work. It is about how they look at the world and for example, from a cybersecurity perspective when they come across a website or domain; they ask questions, a LOT of them such as:</p>
+<ul>
+<li>What are their subdomains?</li>
+<li>What ports are open?</li>
+<li>Is this a sensitive site?</li>
+<li>Which certs are about to expire?</li>
+<li>Which of these sites is running WordPress?</li>
+<li>Who works at this company?</li>
+<li>Do they have any open S3 buckets?</li>
+<li>Are they serving Databases?</li>
+</ul>
+<p>As you can see this continual curiosity for those who are looking for security vulnerabilities to exploit requires that defenders need to think in the same way, which is an adversarial approach.</p>
+<p>Given the adversarial nature of computer security which is always in a constant state of flux, the individual actions of the attacker and defender will continually change the state of play. So to learn how to think like a hacker, you need to:</p>
+<ul>
+<li>Understand the tools, techniques and patterns of an attacker.</li>
+<li>What are the goals of an attacker? While in a CTF it may be to get the Domain Admin account, in real life, this may not be the primary target. It could be a database with customer details, sensitive information about employees, source code etc.</li>
+<li>Have intelligence about what information is available about you and your organisation on the public domain (Surface Web, Deep Web, Dark Web).</li>
+<li>Study and appreciate past attacks to understand approaches and the techniques used and then ask and answer honestly what is your risk exposure to these?</li>
+<li>Don’t just use the technology as a tool, but understand how each of the components works together, how it’s configured, what happens if you change values.</li>
+</ul>
+<p>There are many excellent resources to understand the tools and techniques used by cybercriminals, and two that I like are MITRE’s Att&amp;CK framework which is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations and The Cyber Kill Chain by Lockheed Martin which is part of their Intelligence Drive Defense model for the identification and prevention of cyber intrusions.</p>
+<p><img src="/assets/cyberkillchain.png" alt="Cyber Kill Chain"></p>
+<p>The final skill to develop is “oblique thinking” which is a skill that is finely honed in hackers as there is often no direct path to the objective. The ability is in identifying assumptions that you have made and then finding ways that you can violate these to move you along the path to your target. An example of this is that if you look at a payment processing system, there are several gates that you need to pass before you can complete the process. The developer has designed this sequentially in that you go through them in order, but what if you could skip some steps? How can you test this? What has to be true for this to occur and so on. When you look at this problem and then start breaking it down into known and unknown assumptions, you can begin to see new ways to exploit a system.</p>
+<p>By thinking differently, asking questions and looking at things from a different angle, you will start to see areas for improvement and stay one step ahead of the threat.</p>
+<p>Happy hacking :)</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>One Problem at a Time</title>
+            <link>https://www.nephos.guru/posts/2020/one_problem/</link>
+            <pubDate>Thu, 30 Jul 2020 00:27:44 +0800</pubDate>
+            
+            <guid>https://www.nephos.guru/posts/2020/one_problem/</guid>
+            <description>Last week I had a small accident that left me hindered for a few days as I was recovering, and due to the nature of the injury, I had to lie down on my side. I took this time to catch up on reading and watched some TV as wasn&amp;rsquo;t really in a position to do much more over the weekend.
+While all this was happening, I was thinking to myself; I don&amp;rsquo;t need this, I have enough problems that I need to sort out.</description>
+            <content type="html"><![CDATA[<p>Last week I had a small accident that left me hindered for a few days as I was recovering, and due to the nature of the injury, I had to lie down on my side. I took this time to catch up on reading and watched some TV as wasn&rsquo;t really in a position to do much more over the weekend.</p>
+<p>While all this was happening, I was thinking to myself; I don&rsquo;t need this, I have enough problems that I need to sort out. It was while I was thinking this that on the TV I heard the term &ldquo;One problem at a time&rdquo;. That quote reminded me of an incident that I was told about from Operation Eagle Claw on 24 April 1980.</p>
+<p>Operation Eagle Claw was the failed attempted rescue of hostages in the US Embassy in Tehran. Frank MacAlyster, a member of the US Delta Force at the time, was asleep in the C-130 Hercules aircraft which was parked when a helicopter crashed into it. Frank woke up surrounded by flames and smoke, thinking that the plane was still in the air, he decided that the best course of action was to jump out of the plane, which he did with no parachute.</p>
+<p><img src="/assets/parachute.png" alt="Parachute Joke"></p>
+<p>When asked a few days later what he was going to do once he was out of the plane without a parachute, Frank replied,</p>
+<blockquote>
+<p><strong>&ldquo;One problem at a time Sarge, one problem at a time&rdquo;</strong></p>
+</blockquote>
+<p>Today, with the COVID19 pandemic, industries are being disrupted, people are losing their jobs and, we all need to change our perspective to not only solving &ldquo;one problem at a time&rdquo;, but also to the mindset of &ldquo;this too shall pass&rdquo;.</p>
+<p>With everything that is going on, it is easy to lose sight of the big picture and focus on the immediate problem, as we saw in the earlier example, but this needs to put into context that what we are facing today shall pass and is a temporary condition.</p>
+<p>I had seen this when I was in Australia with the Mining Sector, which only has two states, Boom or Bust. During the boom period, everyone is so busy trying to maximise production output and stretch resources to take advantage of the situation; there is no time for anything else. When it is in the bust period, it is about shutting down mines, retrenching staff and cutting costs. While some of this may be necessary for the longevity of the business, it is during these quiet times, that critical work on systems and processes should be undertaken in preparation for the next boom.</p>
+<p>Together we will get through this. Stay strong and healthy, and if you are struggling, help is available.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Staying One Step ahead of the Cybercriminals</title>
+            <link>https://www.nephos.guru/posts/2020/one_step_ahead/</link>
+            <pubDate>Fri, 03 Jul 2020 00:27:44 +0800</pubDate>
+            
+            <guid>https://www.nephos.guru/posts/2020/one_step_ahead/</guid>
+            <description>Security seems to be the one area that each year we spend more money than we did the previous year to stay one step ahead of the threat. Yet, every year there seem to be more and more significant security breaches!
+So, we ask for more money again, and the cycle repeats like a bad case of deja vu or is it just a &amp;ldquo;glitch in the Matrix&amp;rdquo;.
+As with many things in life, it is not enough to know the rules, you need to understand how to play the game if you are to be successful.</description>
+            <content type="html"><![CDATA[<p>Security seems to be the one area that each year we spend more money than we did the previous year to stay one step ahead of the threat. Yet, every year there seem to be more and more significant security breaches!</p>
+<p>So, we ask for more money again, and the cycle repeats like a bad case of deja vu or is it just a &ldquo;glitch in the Matrix&rdquo;.</p>
+<p>As with many things in life, it is not enough to know the rules, you need to understand how to play the game if you are to be successful. A famous quote from Bill Shankly sums it up entirely &ldquo;The trouble with referees is that they know the rules, but they do not know the game.&rdquo; So what does this have to do with Security?</p>
+<p>There are a lot of organisations that believe that Compliance equals Security. This couldn&rsquo;t be further from the truth, and before I get flamed about this statement, let me clarify why. Compliance is a point in time assertion against a &ldquo;specific set of security requirements&rdquo;. Those standards from organisations such as NIST and ISO are an excellent starting point, and many of these standards have become a benchmark for industry best practices. Therefore, if these are best practices, then why does this not this equal Security? The main reason is the depth of the rules. They aren&rsquo;t prescriptive enough and nor can they be given the rapid rate of change with technology and the types of attacks. While closing this argument out, look at some of the most significant security breaches in the last few years, and they have all been certified to one standard or the other.</p>
+<p>In recent months we have undergone massive changes in how we live and work as a result of Covid-19. As a result, we have seen an enormous uptake in cybercrime such as:</p>
+<ul>
+<li>
+<p><strong>Malicious Domains</strong> - The interest in Covid-19 has spawned a mass uptake in domain names that contain &ldquo;coronavirus&rdquo;, &ldquo;covid19&rdquo; etc. While some are legitimate, cybercriminals are creating thousands of new sites to carry out spam campaigns, phishing or to spread malware.</p>
+</li>
+<li>
+<p><strong>Malware</strong> - Widespread global communications related to the coronavirus are being used to mask criminal activities. Malware, spyware and Trojans have been found embedded in interactive coronavirus maps and websites. Spam emails are also tricking users into clicking on links which download malware to their computers or mobile devices.</p>
+</li>
+<li>
+<p><strong>Ransomware</strong> - Attacks against Hospitals and other agencies on the frontline during the pandemic as they are more likely to pay as they can&rsquo;t afford to be offline.</p>
+</li>
+</ul>
+<p>There are several correlations between physical and cybersecurity and, having spent several years in the Military we used to have a term called &ldquo;soft targets&rdquo; and &ldquo;hard targets&rdquo;. Cybercriminals, regardless of how determined are also opportunists who are seeking out easy victims. They are looking for &ldquo;soft targets&rdquo; who are:</p>
+<ul>
+<li>
+<p><strong>Accessible</strong> - If you&rsquo;re easily accessible, your odds of being a victim increase.</p>
+</li>
+<li>
+<p><strong>Predictable</strong> - If you do the same thing and respond the same to all types of events, you make the attackers job simple.</p>
+</li>
+<li>
+<p><strong>Complacent</strong> - A soft target is unaware of their surroundings, not vigilant to potential threats and not assertive about self-protection.</p>
+</li>
+</ul>
+<p>Remember, it is not enough to know the rules you need to play the game, and with cybersecurity, it is about striving to be a &ldquo;hard target&rdquo; that is:</p>
+<ul>
+<li>
+<p><strong>Inaccessible</strong> - You keep the attack surface as small as possible</p>
+</li>
+<li>
+<p><strong>Unpredictable</strong> - You don&rsquo;t offer patterns or routines that an attacker can use</p>
+</li>
+<li>
+<p><strong>Vigilant</strong> - You monitor your environment and take active steps to protect yourself. In short, you make it evident that you are paying attention and respond accordingly.</p>
+</li>
+</ul>
+<p>If you have finished reading this and think, &ldquo;I don&rsquo;t have any data worth stealing&rdquo; then think again. One of the most sought after and most profitable items in the black market are social media credentials, IDs, passports, utility bills etc. So what makes the above so valuable? The more you understand a person&rsquo;s life and behaviour, the easier it is for the threat actor to impersonate them. This opens up a multitude of other attack vectors such as phishing or worse, identity theft and fraud.</p>
+<blockquote>
+<p><em>&ldquo;The five most efficient cyber defenders are: Anticipation, Education, Detection, Reaction and Resilience. Do remember: &ldquo;Cybersecurity is much more than an IT topic.&rdquo;</em> - Stephane Nappo.</p>
+</blockquote>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Winning... by Failing?</title>
+            <link>https://www.nephos.guru/posts/2020/winning_by_failing/</link>
+            <pubDate>Tue, 04 Feb 2020 00:27:44 +0800</pubDate>
+            
+            <guid>https://www.nephos.guru/posts/2020/winning_by_failing/</guid>
+            <description>How adopting a fail fast, fail often, fail smarter approach can lead to success in innovation and transformation “Failure is Awesome; I love to Fail!”
+said no one EVER!
+When we think of failure it conjures up a range of emotions from inadequacy, worthlessness to why try as I am never going to succeed. This type of self-critical talk is not right for anyone and do you know what, everyone fails (more often than we realise).</description>
+            <content type="html"><![CDATA[<h2 id="how-adopting-a-fail-fast-fail-often-fail-smarter-approach-can-lead-to-success-in-innovation-and-transformation">How adopting a fail fast, fail often, fail smarter approach can lead to success in innovation and transformation</h2>
+<p><em>“Failure is Awesome; I love to Fail!”</em></p>
+<p>said no one <strong>EVER</strong>!</p>
+<p>When we think of failure it conjures up a range of emotions from inadequacy, worthlessness to why try as I am never going to succeed.  This type of self-critical talk is not right for anyone and do you know what, everyone fails (more often than we realise).</p>
+<p>It is easy to look around and see examples of failures and below are a few images of ones ranging from simple spelling mistakes.</p>
+<p><img src="/assets/stop.png" alt="Incorrect Stop Sign"></p>
+<p>To sending mixed messages to those to are trying to get into a building</p>
+<p><img src="/assets/typo.png" alt="Typo on Door Signage"></p>
+<p>To my favourite of these being a case of mistaken identity when a well-known brand expands its product offerings (I am not sure about you but when I see this I picture a toothbrush with a dab of Lasagna on it)</p>
+<p><img src="/assets/colgate.png" alt="Colgate Lasagna"></p>
+<h2 id="what-does-failure-mean-to-you">What does Failure mean to you?</h2>
+<p>Before we list some common reasons, I want to point out that there is a difference between feeling like a failure and failing at something.  We will cover some of the most common opinions and beliefs about failure.</p>
+<ul>
+<li>No common sense</li>
+<li>Stupidity</li>
+<li>Bad decisions and judgement</li>
+<li>Lack of thinking</li>
+<li>Idiocy</li>
+<li>Lack of Intelligence</li>
+</ul>
+<p>The above reasons come from your interpretation of who you are and the transference of these onto others when they fail.  Failing is just failing and a healthy and unavoidable part of our everyday life. No one is immune!</p>
+<p>At an organisational level, I have been to many companies and met individuals who continuously say <em>“we’ve never failed, we don’t know how to fail”</em>, and this attitude will blindside them and the organisation every time.</p>
+<h2 id="learning-fast-from-fail-fast">Learning Fast from Fail Fast</h2>
+<p>At an organisational level, seven principles need to exist as part of the culture:</p>
+<ol>
+<li>
+<p>Celebrate the Learning Process - We only master skills by learning what works and doesn’t work.  A perfect example of this is to watch children when they are beginning to learn to walk. They don’t just decide one day that they are going to walk and master it, they stumble, fall, bump into things and each time make small adjustments, get some help from their parents and before long they are walking around independently.</p>
+</li>
+<li>
+<p>Create a Culture of Trust and Respect - Everyone needs to feel safe and secure and if we are to indeed find the next major breakthrough or make significant changes in the organisation, then we need to be in a culture that trusts that we are doing right by the organisation and that they respect us to be there for us.</p>
+</li>
+<li>
+<p>Have a Fast Mourning Curve - As stated earlier, failure is inevitable and when we encounter this in our organisation we should review what happened, extract the lessons learnt and then move on.  We can’t continually dwell in the past and nor can we continue to hold this over the heads of those involved.</p>
+</li>
+<li>
+<p>Accept Failure, Forgive, Don’t Forget - This is important as failure will happen, but we also don’t want to forget the lessons learnt from the past and keep making the same mistakes over and over again.</p>
+</li>
+<li>
+<p>Move fast and break things - This principle comes from Facebook and whilst I agree that we need to put more emphasis on action, this is dependant on the stage of the organisation and the nature of our business.  This needs to be adapted based for our organisation but the principle itself is essential as we look around markets are being continuously disrupted and it would be better if we internally disrupted our business and industry before the competition does.</p>
+</li>
+<li>
+<p>Be Accountable! - This principle is near and dear to my heart as at the end of the day if you are given the opportunity and something goes wrong, you need to take accountability for it, fix it.</p>
+</li>
+<li>
+<p>Persistence - “Continuous effort - not strength or intelligence - is the key to unlocking our potential” - Winston Churchill</p>
+</li>
+</ol>
+<h2 id="how-do-i">How do I&hellip;</h2>
+<p>When you look at the above the first thing that should pop into your mind is that these are all common sense and we do it anyway.  I completely understand this mindset as who would say that they have a culture that doesn’t embrace respect, trust and learning?</p>
+<p>What we say and think versus what we do is often not aligned or people within our organisations at middle levels of management aren’t living by these values and principles.</p>
+<p>To get around this and what has been successful for me in the past is to focus on 2 or 3 of the above principles as linchpins to change and then once we get some traction the rest will fall into line.  The ones that I focus on initially are the following in order and some steps to implement them in your organisation:</p>
+<ul>
+<li>
+<p>Create a Culture of Trust and Respect - For any change to be implemented there has be a feeling of safety and whilst I am sure there are people saying I can’t control the culture of the company you are correct, but you can control this within your team and your sphere of influence.  If you are a team leader then by providing an environment that as the leader you pass credit to your team and if things go wrong you shield them and you take accountability when it goes wrong then your team will see that you have their backs and this builds trust.</p>
+</li>
+<li>
+<p>Celebrate the Learning Process - This is achieved by giving people an opportunity to take on tasks that are outside their comfort zone and getting them to relook at how things are currently working by challenging them to find ways to improve the process.</p>
+</li>
+<li>
+<p>Accept Failure, Forgive, Don’t Forget - This is the next logical step to the previous point because as soon as you challenge people to take on new skills it is inevitable that failure will occur.   This is the most important thing in that when things go wrong, and they will that you remain calm, provide them with the opportunity to correct this and use it as part of learning development to get them comfortable with making changes and failure.  One of the things that I like to do is to host a “Failure Party” and get everyone together in a relaxed environment. We then discuss the changes that have been made in a non-judgemental manner without identifying staff to celebrate what didn’t go to plan and how this ultimately leads to overall success.</p>
+</li>
+</ul>
+<p>I have had the opportunity to apply these principles many times in my career and I like to take a slightly different approach in that I don’t refer to it as failures, but merely as learnings.  The reason for doing so is to circumvent the perception that the word failure has in many cultures, but still applying all the above principles and approach.</p>
+<p>I have found that when we call it “learnings” you can then come up with a hypothesis on how to solve a problem such as “How do we reduce Customer Interactions by x%?”  When you do this you are able to come up with a number of possible reasons and try these in a controlled manner to prove or disprove that they work.</p>
+<p>There is a belief that we make a decision and then execute and we get the final result.  This is a false belief as no single decision or approach just works out of the box. There are many decisions in between and many of these are wrong, but if we have a way to measure and track then we can course-correct quickly as part of a fast iterative cycle.</p>
+<h2 id="the-upside-of-failure">The Upside of Failure</h2>
+<p>The following are some results that were achieved in just one quarter by applying the above principles for Australian Operations of a company in the Telecommunications industry:</p>
+<ul>
+<li>
+<p>94.8% reduction in Call Volume</p>
+</li>
+<li>
+<p>61.63% reduction in the cost for Inbound Call Charges</p>
+</li>
+<li>
+<p>50.11% Improvement in Voice Average Speed to Answer</p>
+</li>
+<li>
+<p>35.71 increase in Number of Chat Interactions</p>
+</li>
+<li>
+<p>47.98% reduction in Cost to Serve</p>
+</li>
+<li>
+<p>31./71% reduction in Operations Staff</p>
+</li>
+</ul>
+<h2 id="wrapping-up">Wrapping Up</h2>
+<p>Failure is part of life, we all fail and there is no getting around it.  The most successful people are also those to have experienced the most failure and what makes them different is a single realisation which is a failure and feeling like a failure aren’t intertwined.</p>
+<blockquote>
+<p><em>Failure is temporary and it only becomes permanent if you don’t do anything about it!</em></p>
+</blockquote>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

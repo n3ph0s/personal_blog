@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Learning is a lifelong journey, best traveled with an open mind and a curious heart.</title>
+    <link>https://www.nephos.guru/tags/linux/</link>
+    <description>Recent content in linux on Learning is a lifelong journey, best traveled with an open mind and a curious heart.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 06 Oct 2023 18:22:13 +0800</lastBuildDate><atom:link href="https://www.nephos.guru/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Linux Journey: From Desktop Environments to Minimalist Tiling Window Manager</title>
+      <link>https://www.nephos.guru/posts/2023/linux_journey_continued/</link>
+      <pubDate>Fri, 06 Oct 2023 18:22:13 +0800</pubDate>
+      
+      <guid>https://www.nephos.guru/posts/2023/linux_journey_continued/</guid>
+      <description>I can&amp;rsquo;t believe it&amp;rsquo;s been over two years since I made the switch from Apple to Linux. It was a great decision, and I haven&amp;rsquo;t looked back.
+At first, I used PopOS, a Linux distribution known for its tiling window manager. I liked PopOS, but I wanted a more customized and streamlined experience. So, I decided to move away from desktop environments altogether and switch to a tiling window manager on Debian 12.</description>
+    </item>
+    
+    <item>
+      <title>My Journey to Linux</title>
+      <link>https://www.nephos.guru/posts/2022/linux_journey/</link>
+      <pubDate>Wed, 13 Jul 2022 01:32:51 +0800</pubDate>
+      
+      <guid>https://www.nephos.guru/posts/2022/linux_journey/</guid>
+      <description>This is the story of my journey from being a loyal Apple user for nearly 20 years when 1 year ago I decided to completely leave the Apple ecosystem and move to Linux full-time.
+The article will provide an overview of the many small decisions that I made from mid-2021 when I got a Lenovo laptop and installed PopOS 20.04 on it.
+Background To provide some context, it was around 2000 when I decided to move away from Windows (the last good Windows OS in my opinion was Windows XP) and my first foray into Apple was an iMac (The tangerine colour I believe) and over the years I have had several MacBook Pros including the 17inch model which was a beast and lasted for more years than I can recall.</description>
+    </item>
+    
+  </channel>
+</rss>
