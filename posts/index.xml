@@ -6,8 +6,162 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Fri, 06 Oct 2023 18:22:13 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 13 Oct 2023 16:25:41 +0800</lastBuildDate>
         <atom:link href="https://www.nephos.guru/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>JupyterLab behind Nginx Reverse Proxy</title>
+            <link>https://www.nephos.guru/posts/2023/jupyter/</link>
+            <pubDate>Fri, 13 Oct 2023 16:25:41 +0800</pubDate>
+            
+            <guid>https://www.nephos.guru/posts/2023/jupyter/</guid>
+            <description>Prerequisites This is based on the assumption on having a Virtual Machine / Cloud Instance that has the following:
+Debian 12 Server (minimal installation with SSH enabled) A non-root user with sudo privileges Installing Dependencies Update Debian package index and install required packages:
+sudo apt update &amp;amp;&amp;amp; sudo apt install python3 python3-pip python3-venv nodejs -y Confirm that these have been successfully installed by running command python3 --version &amp;amp;&amp;amp; pip3 --version &amp;amp;&amp;amp; node --version and you will see output as below:</description>
+            <content type="html"><![CDATA[<h2 id="prerequisites">Prerequisites</h2>
+<p>This is based on the assumption on having a Virtual Machine / Cloud Instance that has the following:</p>
+<ul>
+<li>Debian 12 Server (minimal installation with SSH enabled)</li>
+<li>A non-root user with sudo privileges</li>
+</ul>
+<h2 id="installing-dependencies">Installing Dependencies</h2>
+<p>Update Debian package index and install required packages:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt install python3 python3-pip python3-venv nodejs -y
+</span></span></code></pre></div><p>Confirm that these have been successfully installed by running command <code>python3 --version &amp;&amp; pip3 --version &amp;&amp; node --version</code> and you will see output as below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>david@debian:~$ python3 --version <span style="color:#f92672">&amp;&amp;</span> pip3 --version <span style="color:#f92672">&amp;&amp;</span> node --version
+</span></span><span style="display:flex;"><span>Python 3.11.2
+</span></span><span style="display:flex;"><span>pip 23.0.1 from /usr/lib/python3/dist-packages/pip <span style="color:#f92672">(</span>python 3.11<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>v18.13.0
+</span></span></code></pre></div><h2 id="installing-jupyter">Installing Jupyter</h2>
+<h3 id="create-a-python-virtual-environment">Create a Python Virtual Environment</h3>
+<p>Create a directory,  a Python virtual environment and then activate it</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -p ~/project <span style="color:#f92672">&amp;&amp;</span> cd ~/project
+</span></span><span style="display:flex;"><span>python3 -m venv venv
+</span></span><span style="display:flex;"><span>source venv/vin/activate
+</span></span></code></pre></div><h3 id="installing-jupyter-1">Installing Jupyter</h3>
+<p>Once the Python virtual environment has been activated install the Jupyter environment via Pip and then confirm that it has been install correctly</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip3 install jupyter
+</span></span><span style="display:flex;"><span>which jupyter <span style="color:#f92672">&amp;&amp;</span> jupyter --version
+</span></span></code></pre></div><p>If it has been successfully installed you will get output similar to the following</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>venv<span style="color:#f92672">)</span> david@debian:~/project$ which jupyter <span style="color:#f92672">&amp;&amp;</span> jupyter --version
+</span></span><span style="display:flex;"><span>/home/david/project/venv/bin/jupyter
+</span></span><span style="display:flex;"><span>Selected Jupyter core packages...
+</span></span><span style="display:flex;"><span>IPython          : 8.16.1
+</span></span><span style="display:flex;"><span>ipykernel        : 6.25.2
+</span></span><span style="display:flex;"><span>ipywidgets       : 8.1.1
+</span></span><span style="display:flex;"><span>jupyter_client   : 8.3.1
+</span></span><span style="display:flex;"><span>jupyter_core     : 5.4.0
+</span></span><span style="display:flex;"><span>jupyter_server   : 2.7.3
+</span></span><span style="display:flex;"><span>jupyterlab       : 4.0.6
+</span></span><span style="display:flex;"><span>nbclient         : 0.8.0
+</span></span><span style="display:flex;"><span>nbconvert        : 7.9.2
+</span></span><span style="display:flex;"><span>nbformat         : 5.9.2
+</span></span><span style="display:flex;"><span>notebook         : 7.0.4
+</span></span><span style="display:flex;"><span>qtconsole        : 5.4.4
+</span></span><span style="display:flex;"><span>traitlets        : 5.11.2
+</span></span></code></pre></div><h3 id="configuring-jupyterlab">Configuring JupyterLab</h3>
+<p>JupyterLab is the next-generation web-based user interface for the Jupyter ecosystem. With JupyterLab, you can work with documents, and activities such as Jupyter Notebook, text editor, and terminal in one window. The JupyterLab offers an IDE-like experience for managing and developing Jupyter projects.</p>
+<p>First, we need to configure the Jupyter Server and secure the installation</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jupyter server --generate-config
+</span></span><span style="display:flex;"><span>jupyter server password
+</span></span></code></pre></div><p>You can verify the content of the Jupyter Server configuration using the following command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jupyter server --show-config
+</span></span></code></pre></div><p>Next, generate a new configuration for JupyterLab and assign an IP Address</p>
+<blockquote>
+<p>Make sure to change the IP address to the one that is being used on your server</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jupyter lab --generate-config
+</span></span><span style="display:flex;"><span>jupyter lab --show-config
+</span></span><span style="display:flex;"><span>jupyter lab --ip 1.1.1.1
+</span></span></code></pre></div><p>The Jupyter Lab will be running on the assigned IP address with the default Port 8888 and is accessible via /lab path</p>
+<p><img src="/assets/password.png" alt="password prompt"></p>
+<p>Once you have entered the correct password you will see the default landing page</p>
+<p><img src="/assets/jupyter_landing.png" alt="jupyter landing page"></p>
+<h3 id="running-jupyterlab-as-a-systemd-service">Running JupyterLab as a Systemd Service</h3>
+<p>Create a new systemd service file in <code>/etc/systemd/system/jupyterlab.service</code> using your preferred editor with the following content</p>
+<blockquote>
+<p>Ensure that you change the username from <strong>david</strong> to the username of the account that you are using</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>Unit<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>Description<span style="color:#f92672">=</span>JupyterLab Service
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>Type<span style="color:#f92672">=</span>simple
+</span></span><span style="display:flex;"><span>PIDFile<span style="color:#f92672">=</span>/run/jupyter.pid
+</span></span><span style="display:flex;"><span>ExecStart<span style="color:#f92672">=</span>/home/david/project/venv/bin/jupyter lab --config<span style="color:#f92672">=</span>/home/david/.jupyter/jupyter_lab_config.py
+</span></span><span style="display:flex;"><span>User<span style="color:#f92672">=</span>david
+</span></span><span style="display:flex;"><span>Group<span style="color:#f92672">=</span>david
+</span></span><span style="display:flex;"><span>WorkingDirectory<span style="color:#f92672">=</span>/home/david/project
+</span></span><span style="display:flex;"><span>Restart<span style="color:#f92672">=</span>always
+</span></span><span style="display:flex;"><span>RestartSec<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Install<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>WantedBy<span style="color:#f92672">=</span>multi-user.target
+</span></span></code></pre></div><p>Reload the systemd manager to apply the changes and then load the service</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl daemon-reload
+</span></span><span style="display:flex;"><span>sudo systemctl enable jupyterlab --now
+</span></span><span style="display:flex;"><span>sudo systemctl status jupyterlab
+</span></span></code></pre></div><p>Check the output to see that the service is running  which should like below</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Press RETURN to <span style="color:#66d9ef">continue</span> 
+</span></span><span style="display:flex;"><span>● jupyterlab.service - JupyterLab Service
+</span></span><span style="display:flex;"><span>     Loaded: loaded <span style="color:#f92672">(</span>/etc/systemd/system/jupyterlab.service; enabled; preset: enabled<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>     Active: active <span style="color:#f92672">(</span>running<span style="color:#f92672">)</span> since Wed 2023-10-11 11:46:28 PST; 43min ago
+</span></span><span style="display:flex;"><span>   Main PID: <span style="color:#ae81ff">4690</span> <span style="color:#f92672">(</span>jupyter-lab<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      Tasks: <span style="color:#ae81ff">3</span> <span style="color:#f92672">(</span>limit: 4603<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>     Memory: 79.2M
+</span></span><span style="display:flex;"><span>        CPU: 2.381s
+</span></span><span style="display:flex;"><span>     CGroup: /system.slice/jupyterlab.service
+</span></span><span style="display:flex;"><span>             └─4690 /home/david/project/venv/bin/python3 /home/david/project/venv/bin/jupyter-lab --config<span style="color:#f92672">=</span>/home/david/.jupyter/jupyter_lab_config.py
+</span></span></code></pre></div><h2 id="configure-nginx-as-a-reverse-proxy-for-jupyter">Configure Nginx as a Reverse Proxy for Jupyter</h2>
+<h3 id="allow-remote-access-to-jupyterlab">Allow Remote Access to JupyterLab</h3>
+<p>By default JupyterLab is only accessible via a Local IP address.  To allow remote connection the default configuration must be modified.  Modify <code>~/.jupyter/jupyter_lab_config.py</code> and uncomment and modify the following line to the following</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>c.ServerApp.allow_remote_access <span style="color:#f92672">=</span> True
+</span></span></code></pre></div><p>Once this has been modified, restart the JupyterLab Service by running <code>sudo systemctl restart jupyterlab.service</code></p>
+<blockquote>
+<p>When you restart the service you will see a token in the URL, make a copy of this as you will need it later</p>
+</blockquote>
+<h3 id="install-and-configure-nginx-as-a-reverse-proxy">Install and Configure Nginx as a Reverse Proxy</h3>
+<p>Install Nginx</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install nginx -y
+</span></span></code></pre></div><p>After Nginx is installed, create a server block configuration in <code>/etc/nginx/sites/available/jupyterlab</code> using your preferred editor running with sudo privileges</p>
+<p>Insert the following configuration ensuring to change the domain name</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>server <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    listen 80;
+</span></span><span style="display:flex;"><span>    server_name jupyterlab.vmdomain.io;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    access_log /var/log/nginx/vmdomain.io.access.log;
+</span></span><span style="display:flex;"><span>    error_log /var/log/nginx/vmdomain.io.error.log;
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    location / <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        proxy_pass http://127.0.0.1:8888;
+</span></span><span style="display:flex;"><span>        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+</span></span><span style="display:flex;"><span>        proxy_set_header X-Real-IP $remote_addr;
+</span></span><span style="display:flex;"><span>        proxy_set_header Host $http_host;
+</span></span><span style="display:flex;"><span>        proxy_http_version 1.1;
+</span></span><span style="display:flex;"><span>        proxy_redirect off;
+</span></span><span style="display:flex;"><span>        proxy_buffering off;
+</span></span><span style="display:flex;"><span>        proxy_set_header Upgrade $http_upgrade;
+</span></span><span style="display:flex;"><span>        proxy_set_header Connection <span style="color:#e6db74">&#34;upgrade&#34;</span>;
+</span></span><span style="display:flex;"><span>        proxy_read_timeout 86400;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>Run the following command to activate the server block and verify the Nginx Configuration</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo ln -s /etc/nginx/sites-available/jupyterlab /etc/nginx/sites-enabled/
+</span></span><span style="display:flex;"><span>sudo nginx -t
+</span></span></code></pre></div><p>You should receive the following output if the configuration is successful</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+</span></span><span style="display:flex;"><span>nginx: configuration file /etc/nginx/nginx.conf test is successful
+</span></span></code></pre></div><p>Once you have confirmed that the configuration file is ok, restart Nginx and verify that the service started correctly</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart nginx
+</span></span><span style="display:flex;"><span>sudo systemctl status nginx
+</span></span></code></pre></div><h2 id="access-jupyterlab-via-local-machine">Access JupyterLab via Local Machine</h2>
+<p>Modify the <code>/etc/hosts</code> file to include the IP Address and FQDN</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1.1.1.1    jupyterlab.vmdomain.io
+</span></span></code></pre></div><p>Next, open a Web Browser and navigate to your JupyterLab installation <a href="http://jupyterlab.vmdomain.io">http://jupyterlab.vmdomain.io</a> and you will get a login page.  Go to the bottom and you will enter the token you got earlier and you can also set a new password</p>
+<p><img src="/assets/jupyter_token.png" alt="Enter Jupyter Token and Set Password"></p>
+<p>You will then be taken to the dashboard and the installation is complete.</p>
+]]></content>
+        </item>
         
         <item>
             <title>My Linux Journey: From Desktop Environments to Minimalist Tiling Window Manager</title>

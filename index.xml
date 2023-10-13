@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 06 Oct 2023 18:22:13 +0800</lastBuildDate><atom:link href="https://www.nephos.guru/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Oct 2023 16:25:41 +0800</lastBuildDate><atom:link href="https://www.nephos.guru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JupyterLab behind Nginx Reverse Proxy</title>
+      <link>https://www.nephos.guru/posts/2023/jupyter/</link>
+      <pubDate>Fri, 13 Oct 2023 16:25:41 +0800</pubDate>
+      
+      <guid>https://www.nephos.guru/posts/2023/jupyter/</guid>
+      <description>Prerequisites This is based on the assumption on having a Virtual Machine / Cloud Instance that has the following:
+Debian 12 Server (minimal installation with SSH enabled) A non-root user with sudo privileges Installing Dependencies Update Debian package index and install required packages:
+sudo apt update &amp;amp;&amp;amp; sudo apt install python3 python3-pip python3-venv nodejs -y Confirm that these have been successfully installed by running command python3 --version &amp;amp;&amp;amp; pip3 --version &amp;amp;&amp;amp; node --version and you will see output as below:</description>
+    </item>
+    
     <item>
       <title>My Linux Journey: From Desktop Environments to Minimalist Tiling Window Manager</title>
       <link>https://www.nephos.guru/posts/2023/linux_journey_continued/</link>
@@ -96,16 +107,6 @@ Compliance is often a requirement by a governing body based on the industry that
       
       <guid>https://www.nephos.guru/posts/2021/security_new_normal/</guid>
       <description>At the beginning of the COVID-19 crisis, many organizations suddenly transitioned to a remote workforce with an increased focus on servicing customers via digital channels. While this rapid transition occurred, telecommuting&amp;rsquo;s sudden move created some security gaps with employees using insecure devices and networks. Cybercriminals, never wanting to let a crisis go to waste, used well-known attack techniques to capitalize on people&amp;rsquo;s COVID-19 fears. The following are some statistics with regards to COVID-19 cybercrime:</description>
-    </item>
-    
-    <item>
-      <title>Visual Thinking for Cybersecurity</title>
-      <link>https://www.nephos.guru/posts/2020/visual_thinking/</link>
-      <pubDate>Fri, 16 Oct 2020 12:00:41 +0800</pubDate>
-      
-      <guid>https://www.nephos.guru/posts/2020/visual_thinking/</guid>
-      <description>You may be thinking from the title of this article, why do I need to think visually? Well, last week, I had an interesting conversation with a Senior Executive about security and that even something as simple as his website could allow for a more extensive compromise and a threat to his business.
-I am sure you can imagine how the conversation went as his first response was, “this is not part of the production network,” and in this case, he was right.</description>
     </item>
     
   </channel>

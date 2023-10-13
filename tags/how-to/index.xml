@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>how-to on Learning is a lifelong journey, best traveled with an open mind and a curious heart.</title>
+    <link>https://www.nephos.guru/tags/how-to/</link>
+    <description>Recent content in how-to on Learning is a lifelong journey, best traveled with an open mind and a curious heart.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 13 Oct 2023 16:25:41 +0800</lastBuildDate><atom:link href="https://www.nephos.guru/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JupyterLab behind Nginx Reverse Proxy</title>
+      <link>https://www.nephos.guru/posts/2023/jupyter/</link>
+      <pubDate>Fri, 13 Oct 2023 16:25:41 +0800</pubDate>
+      
+      <guid>https://www.nephos.guru/posts/2023/jupyter/</guid>
+      <description>Prerequisites This is based on the assumption on having a Virtual Machine / Cloud Instance that has the following:
+Debian 12 Server (minimal installation with SSH enabled) A non-root user with sudo privileges Installing Dependencies Update Debian package index and install required packages:
+sudo apt update &amp;amp;&amp;amp; sudo apt install python3 python3-pip python3-venv nodejs -y Confirm that these have been successfully installed by running command python3 --version &amp;amp;&amp;amp; pip3 --version &amp;amp;&amp;amp; node --version and you will see output as below:</description>
+    </item>
+    
+  </channel>
+</rss>
